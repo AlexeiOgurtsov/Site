@@ -1,0 +1,246 @@
+body {
+  font-family: SegoeUIRegular;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.colum-3 {
+  width: 33.33333333334%;
+  float: left;
+}
+
+.colum-4 {
+  width: 25%;
+  float: left;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  height: inherit;
+}
+
+body > h2 {
+  font-size: 52px;
+  color: #1f2a30;
+  text-align: center;
+  font-family: SegoeUIBold;
+  padding: 25px 0px 20px 0px;
+}
+
+.data h2 {
+  margin: 0 20px 20px 20px;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/headbg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+}
+header .menu-head {
+  padding-top: 40px;
+}
+header .menu-head nav {
+  float: right;
+}
+header .menu-head nav a {
+  padding: 10px 20px 15px 20px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 3px solid transparent;
+}
+header .menu-head nav a:hover {
+  border-bottom-color: #eb2330;
+}
+header .navbar-fixed-top {
+  background-color: #1f2a30;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  padding-top: 20px !important;
+}
+header img {
+  width: 150px;
+  float: left;
+}
+header h1 {
+  font-family: Scriptonite;
+  color: #fff;
+  font-size: 172px;
+  color: #eb2330;
+  font-weight: 300;
+  margin-bottom: 0 !important;
+}
+header h5 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 100;
+  font-family: SegoeUiLight;
+  margin-top: 0;
+}
+header i {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  color: #fff;
+  -webkit-animation: bounce 2000ms infinite;
+  animation: bounce 2000ms infinite;
+}
+
+section.sight {
+  width: 100%;
+  height: 400px;
+}
+section.sight div {
+  float: left;
+  height: inherit;
+  overflow: hidden;
+  width: 50%;
+}
+section.sight div img {
+  width: 100%;
+  height: auto;
+}
+section.sight:nth-child(odd) .text {
+  width: calc(50% - 70px) !important;
+  text-align: left;
+  padding-left: 40px;
+  padding-right: 30px;
+}
+section.sight:nth-child(even) .text {
+  width: calc(50% - 70px) !important;
+  text-align: right;
+  padding-right: 40px;
+  padding-left: 30px;
+}
+section.sight h3 {
+  font-size: 32px;
+  color: #eb2330;
+  padding-bottom: 20px;
+  font-family: SegoeUIBold;
+}
+section.sight p {
+  font-size: 16px;
+  font-family: SegoeUIRegular;
+  line-height: 1.4;
+  color: #1f2a30;
+}
+
+.sig1 h3 {
+  padding-top: 40px;
+}
+
+.sig2 h3 {
+  padding-top: 75px;
+}
+
+.sig3 h3 {
+  padding-top: 75px;
+}
+
+.sig4 h3 {
+  padding-top: 70px;
+}
+
+.facts {
+  padding: 0 0 60px 0;
+  height: 300px;
+  text-align: center;
+}
+.facts h3 {
+  width: 100%;
+  font-size: 28px;
+  color: #1f2a30;
+  height: 40px;
+  display: block;
+  line-height: 40px;
+  font-weight: 700;
+}
+.facts img {
+  margin: 20px auto;
+  width: 140px;
+}
+.facts p {
+  font-size: 16px;
+  line-height: 28px;
+  padding: 0 10px;
+}
+
+.map {
+  width: 100%;
+  height: auto;
+}
+.map img {
+  width: 100%;
+  height: inherit;
+}
+
+.data {
+  font-size: 18px;
+  line-height: 22px;
+  color: #1f2a30;
+}
+.data h2 {
+  font-size: 32px;
+  font-family: SegoeUIBold;
+  padding-left: 20px;
+  width: calc(100% - 20px);
+  margin-top: 70px;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+#up {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  color: #fff;
+  line-height: 45px;
+  background-color: #eb2330;
+  margin-top: -5px;
+}

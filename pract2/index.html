@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Главная | iMinsk</title>
+		<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	</head>
+	<body>
+		<header>
+			<div class="menu-head">
+				<div class="container">
+					<img src="images/logo.png">			 	
+					<nav class="menu">
+						<a href="index.html">Главная</a>
+						<a href="history.html">История</a>
+						<a href="data.html">Справочные данные</a>
+						<a href="resources.html">Ресурсы</a>
+					</nav>
+					<div style="clear: both"></div>
+				</div>
+			</div>
+			<h1>i Minsk</h1>
+			<h5>Информационный сайт о Минске</h5>
+			<a href="" id="tohash"><i  class="fa fa-angle-down fa-2x"></i></a>		
+		</header>
+		<h2>Факты о Минске</h2>
+		<section class="facts">
+			<div class="container">
+				<div class="colum-3">
+					<h3>Горячая штучка</h3>
+					<img src="images/fact1.png" alt="">
+					<p>За время своего существования, город сгорaл дотла 18 раз</p>
+				</div>
+				<div class="colum-3">
+					<h3>Мальчик с лебедем</h3>
+					<img src="images/fact3.png" alt="">
+					<p>Самый старый фонтан в Минске был открыт в 1874 году, в знак открытия водопровода с артезианской водой.</p>
+				</div>
+				<div class="colum-3">
+					<h3>Самый большой сад</h3>
+					<img src="images/fact2.png" alt="">
+					<p>Минский ботанический сад, размером в 96 гектаров, почётно занимает 3-е место в Европе по площади.</p>
+				</div>
+			</div>
+		</section>
+		<h2>Главные достопримечательности</h2>
+		<section class="sights">
+			<section class="sight sig1">
+				<div>
+					<img src="images/sight1.jpg" alt="Красный костёл">
+				</div>
+				<div class="text">
+					<h3>Красный костёл</h3>
+					<p>Костёл святого Симеона и святой Елены представляет собой пятинефную, трёхбашенную базилику асимметричной объёмно-пространственной композиции с мощным трансептом, торцы которого решены так же как и главный фасад — с большим окном-розой под треугольным фронтоном. Первоначально храм имел три апсиды в конце каждого нефа, но после перестройки в советский период они были объединены в одну центральную полуцилиндрическую апсиду</p>
+				</div>
+			</section>
+			<section class="sight sig2">
+				<div class="text">
+					<h3>Музей ВОВ</h3>
+					<p>Шестьдесят лет минуло с того дня, когда в осенней военной Москве были показаны первые свидетельства мужества и трагедии белорусского народа. Сегодня Белорусский государственный музей истории Великой Отечественной войны – крупнейшее в нашей стране хранилище Памяти о тех великих и страшных днях.</p>
+				</div>
+				<div>
+					<img src="images/sight2.jpg" alt="">
+				</div>
+			</section>
+			<section class="sight sig3">
+				<div>
+					<img src="images/sight3.jpg" alt="">
+				</div>
+				<div class="text">
+					<h3>Национальная библиотека РБ</h3>
+					<p>Национальная библиотека Беларуси, возглавляя систему библиотек страны, является хранительницей мощного информационного ресурса. Более 90 лет она собирает документальное наследие белорусского народа. В настоящее время библиотечный фонд составляет около 10 млн единиц хранения.</p>
+				</div>
+			</section>
+			<section class="sight sig4">
+				<div class="text">
+					<h3>Троецкое предместье</h3>
+					<p>На территории предместья был расположен первый католический храм Минска. Здесь также находились не сохранившиеся до наших дней Свято-Вознесенский монастырь с одноименной церковью, Свято-Борисоглебская церковь, женский базилианский монастырь Святой Троицы (сохранился частично) и костёл и монастырь католического монашеского ордена мариавиток.</p>
+				</div>
+				<div>
+					<img src="images/sight4.jpg" alt="">
+				</div>
+			</section>
+		</section>
+		<a href="" id="up"><i class="fa fa-angle-up fa-2x"></i></a>
+		<script>
+			$('#tohash').on('click', function(){
+				$('html, body').animate({scrollTop: $('header').height()}, 700);
+				return false;
+			});
+			$(window).on('scroll', function(){
+			if( $(window).scrollTop() > $(window).height()){
+				$('.menu-head').addClass('navbar-fixed-top');
+			} else {
+				$('.menu-head').removeClass('navbar-fixed-top');
+			}
+			return false;
+			});	
+			$(function(){
+			$('#up').click(function() {
+				$('html, body').animate({scrollTop: 0},800);
+			  		return false;
+			   });
+			});
+		</script>
+	</body>
+</html>
